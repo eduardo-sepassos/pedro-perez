@@ -42,6 +42,7 @@ export default function Footer() {
           </div>
 
           <a
+            id="contato"
             className="footer__contact"
             href={BOOKING_WHATSAPP_URL}
             target="_blank"

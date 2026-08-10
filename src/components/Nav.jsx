@@ -3,9 +3,9 @@ import { INSTAGRAM_URL, SPOTIFY_URL, YOUTUBE_CHANNEL_URL } from '../config';
 
 const LINKS = [
   { href: '#sobre', label: 'Sobre' },
-  { href: '#mare-nova', label: 'Maré Nova' },
-  { href: '#faixas', label: 'Faixas' },
+  { href: '#mare-nova', label: 'Faixas' },
   { href: '#videoclipe', label: 'Videoclipe' },
+  { href: '#contato', label: 'Contato' },
 ];
 
 export default function Nav() {

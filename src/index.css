@@ -813,6 +813,7 @@ button {
 }
 
 .footer__contact {
+  scroll-margin-top: 100px;
   display: inline-flex;
   align-items: center;
   gap: 16px;
