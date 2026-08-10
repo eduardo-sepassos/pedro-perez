@@ -8,7 +8,7 @@ export default function Video() {
   return (
     <>
       <WaveDivider from="#0b2242" to="#102b52" />
-      <section id="videoclipe" className={`section reveal${inView ? ' in-view' : ''}`} ref={ref}>
+      <section id="videoclipe" className={`section section--raised reveal${inView ? ' in-view' : ''}`} ref={ref}>
         <div className="container">
           <p className="eyebrow">No YouTube</p>
           <h2 className="section__heading">Videoclipe oficial</h2>

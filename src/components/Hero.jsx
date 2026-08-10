@@ -48,8 +48,8 @@ export default function Hero() {
 
         <figure className="hero__portrait">
           <img
-            src={`${import.meta.env.BASE_URL}images/playing_guitar.png`}
-            alt="Pedro Perez cantando e tocando guitarra no palco"
+            src={`${import.meta.env.BASE_URL}images/foto_1.jpg`}
+            alt="Pedro Perez sorrindo, sentado no deque de uma passarela ao entardecer"
           />
         </figure>
       </div>

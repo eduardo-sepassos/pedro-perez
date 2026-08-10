@@ -461,10 +461,31 @@ button {
 
 .about__grid {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 56px;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 48px;
   margin-top: 36px;
   align-items: start;
+}
+
+.about__photo {
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--mare-3);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+}
+
+.about__photo img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.03);
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .about__text p {
@@ -558,6 +579,23 @@ button {
 .release__embed iframe {
   width: 100%;
   border: none;
+}
+
+/* =====================================================
+   Live banner — full-bleed crowd photo
+   ===================================================== */
+.live-banner__photo {
+  margin-top: 32px;
+  width: 100%;
+  aspect-ratio: 1800 / 1012;
+  overflow: hidden;
+}
+
+.live-banner__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* =====================================================

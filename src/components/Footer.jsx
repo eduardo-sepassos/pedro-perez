@@ -5,8 +5,8 @@ import WaveDivider from './WaveDivider';
 export default function Footer() {
   return (
     <>
-      <WaveDivider from="#0b2242" to="#102b52" />
-      <footer className="footer" style={{ background: 'var(--mare-2)' }}>
+      <WaveDivider from="#102b52" to="#0b2242" />
+      <footer className="footer" style={{ background: 'var(--mare)' }}>
         <div className="container">
           <div className="footer__top">
             <p className="footer__mark">Pedro Perez</p>
