@@ -1,5 +1,5 @@
-import { INSTAGRAM_URL, SPOTIFY_URL, YOUTUBE_CHANNEL_URL } from '../config';
-import { InstagramIcon, SpotifyIcon, YouTubeIcon } from './Icons';
+import { BOOKING_PHONE_DISPLAY, BOOKING_WHATSAPP_URL, INSTAGRAM_URL, SPOTIFY_URL, YOUTUBE_CHANNEL_URL } from '../config';
+import { InstagramIcon, SpotifyIcon, WhatsAppIcon, YouTubeIcon } from './Icons';
 import WaveDivider from './WaveDivider';
 
 export default function Footer() {
@@ -40,6 +40,23 @@ export default function Footer() {
               </a>
             </div>
           </div>
+
+          <a
+            id="contato"
+            className="footer__contact"
+            href={BOOKING_WHATSAPP_URL}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="footer__contact-icon">
+              <WhatsAppIcon />
+            </span>
+            <span>
+              <span className="footer__contact-label">Contato · Shows</span>
+              <span className="footer__contact-value">{BOOKING_PHONE_DISPLAY}</span>
+            </span>
+          </a>
+
           <div className="footer__bottom">
             <span>Reggae praia · Vitória, ES</span>
             <span>© {new Date().getFullYear()} Pedro Perez</span>

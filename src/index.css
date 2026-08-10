@@ -812,6 +812,54 @@ button {
   color: var(--sol);
 }
 
+.footer__contact {
+  scroll-margin-top: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 20px 22px;
+  border: 1px solid var(--mare-3);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--espuma);
+  transition: border-color var(--ease), background var(--ease);
+}
+
+.footer__contact:hover {
+  border-color: var(--sol);
+  background: var(--mare-2);
+}
+
+.footer__contact-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--sol);
+  color: var(--mare);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer__contact-label {
+  display: block;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.75rem;
+  color: var(--espuma-dim);
+}
+
+.footer__contact-value {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-top: 3px;
+}
+
 .footer__bottom {
   padding-top: 24px;
   display: flex;
