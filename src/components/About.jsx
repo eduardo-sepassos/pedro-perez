@@ -31,29 +31,38 @@ export default function About() {
           </div>
 
           <div className="about__grid">
-            <div className="about__text">
-              <p>
-                <strong>Pedro Perez</strong> tem 26 anos, é de Vitória, no
-                Espírito Santo, e transforma a vida na beira-mar em canção.
-                Reconhecido como uma das vozes emergentes do reggae praia
-                brasileiro, ele veste letras de romance, reflexão e viagem com
-                o balanço tranquilo do litoral capixaba.
-              </p>
-              <p>
-                Sem pressa e sem fórmula: o som de Pedro respira a mesma maré
-                que embala o Espírito Santo, entre versos de poesia e groove
-                pé na areia — já levado ao palco ao lado de nomes como
-                Armandinho, Maneva e Gabriel O Pensador.
-              </p>
-            </div>
+            <figure className="about__photo">
+              <img
+                src={`${import.meta.env.BASE_URL}images/foto_2.jpg`}
+                alt="Pedro Perez cantando ao microfone em um show noturno na praia"
+              />
+            </figure>
 
-            <div className="about__facts">
-              {FACTS.map((fact) => (
-                <div className="about__fact" key={fact.label}>
-                  <span className="about__fact-label">{fact.label}</span>
-                  <span className="about__fact-value">{fact.value}</span>
-                </div>
-              ))}
+            <div className="about__right">
+              <div className="about__text">
+                <p>
+                  <strong>Pedro Perez</strong> tem 26 anos, é de Vitória, no
+                  Espírito Santo, e transforma a vida na beira-mar em canção.
+                  Reconhecido como uma das vozes emergentes do reggae praia
+                  brasileiro, ele veste letras de romance, reflexão e viagem com
+                  o balanço tranquilo do litoral capixaba.
+                </p>
+                <p>
+                  Sem pressa e sem fórmula: o som de Pedro respira a mesma maré
+                  que embala o Espírito Santo, entre versos de poesia e groove
+                  pé na areia — já levado ao palco ao lado de nomes como
+                  Armandinho, Maneva e Gabriel O Pensador.
+                </p>
+              </div>
+
+              <div className="about__facts">
+                {FACTS.map((fact) => (
+                  <div className="about__fact" key={fact.label}>
+                    <span className="about__fact-label">{fact.label}</span>
+                    <span className="about__fact-value">{fact.value}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
